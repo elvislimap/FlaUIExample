@@ -22,7 +22,7 @@ namespace AutomationTests2
             Application.AttachOrLaunch(new ProcessStartInfo(@"D:\PontoSys\Integrador\" +
                 "Integrations.VirtualIntegration.Presentation.App.exe"));
 
-            Thread.Sleep(1000);
+            Thread.Sleep(3000);
 
             var windowVsCode = application.GetMainWindow(new UIA3Automation());
             var desktop = windowVsCode.Parent.AsWindow();
